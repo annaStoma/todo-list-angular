@@ -1,0 +1,16 @@
+<div class="container">
+    <h3 class="title"> To Do List</h3>
+    <input class="enter-task-input" type="text" placeholder="Enter your task ... " [(ngModel)]="task.name" />
+    <button class="add-task-button" type="button" (click)="Add()"> Add </button>
+    <div>
+        <div *ngFor="let task of tasks" class="task-container">
+            <span class="task"> {{ task.id }} </span>
+            <span (click)="Done(task)" class="task" [ngClass]="{'done': task.done}"> {{ task.name }} </span>
+            <span (click)="Done(task)" class="task" [ngClass]="{'checked': task.checked}"> <img class="icon"
+                    src="https://img.icons8.com/small/16/000000/unchecked-circle.png"> </span>
+            <span (click)="Edit(task)"><img class="icon" src="https://img.icons8.com/small/16/000000/edit.png"> </span>
+            <span (click)="Delete(task)"> <img class="icon"
+                    src="https://img.icons8.com/small/16/000000/delete-sign.png"> </span>
+        </div>
+    </div>
+</div>

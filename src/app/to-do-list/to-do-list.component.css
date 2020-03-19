@@ -1,0 +1,54 @@
+.title{
+    color: rgb(46, 226, 43);
+    text-transform: uppercase;
+}
+.container{
+    width: 50%;
+}
+.enter-task-input{
+    padding:5px; 
+    border: 2px solid #ccc; 
+    border-radius: 5px;
+    outline: none;
+}
+.add-task-button{
+    padding: 6px 10px; 
+    background:rgb(111, 206, 149); 
+    border: none;
+    border-radius: 5px; 
+    margin-left: 5px;
+    color: rgb(255, 255, 255);
+    cursor: crosshair;
+    outline: none;
+}
+.add-task-button:hover{
+    background:rgb(77, 150, 238); 
+    transition: 1000ms;
+}
+.task{
+    color: rgb(46, 226, 43);
+    text-transform: uppercase;
+    width: 90%;
+}
+.icon{
+    width: 15px;
+}
+.icon:hover{
+    transition: 500ms;
+    cursor: pointer;
+    background:rgb(183, 219, 255); 
+    border-radius: 6px; 
+
+}
+.task-container{
+    margin-left: 10px;
+    margin-top: 10px; 
+
+}
+.checked{
+    background-image: url('https://img.icons8.com/small/16/000000/circled-chevron-down.png');
+    background-repeat: no-repeat;    
+}
+.done{
+    text-decoration:line-through;
+}
